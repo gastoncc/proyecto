@@ -1,0 +1,179 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(193, 192, 192);
+}
+
+header {
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: .7;
+    top: 0;
+    }
+
+header img {
+    width: 80px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+li a {
+    color: black;
+    
+}
+
+.banner {
+    background-image: url(../img/IMG_20230401_214905.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+    width: 100%;
+}
+
+@media (min-width: 900px) {
+    #carouselExampleCaptions {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .carousel-item {
+     height: 450px;
+    } 
+}
+
+main {
+    margin: 50px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.parrafo-main {
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.Servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .Servicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+     }
+}
+
+@media (min-width: 992px) {
+    .Servicios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card-img-top {
+    height: 300px;
+}
+
+
+.card {
+    height: 570px;
+    background-color: rgb(177, 174, 174);
+}
+
+.card-servicios {
+    height: 400px;
+    background-color: rgb(183, 183, 183);
+    margin: 20px;
+    padding: 10px;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.iconify {
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
