@@ -1,3 +1,126 @@
 body {
-    background-color: 
+    background-color: $color-primario;
+    color: $color-terciario;
+    font-family: $fuente-principal;
+
+}
+
+header {
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: .7;
+    top: 0;
+
+    
+}
+
+header img {
+    width: 80px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.nav-link, 
+.navbar-nav .nav-link.active {
+    color: $color-terciario;
+    &:hover {
+        color: $color-cuarto;
+    }
+}
+
+.carousel-item img {
+    height: 550px;
+
+    
+}
+
+@media (min-widht: $tablet) {
+    .carousel-item img {
+        height: 70vh;
+
+    }
+}
+
+@media (min-widht: $desktop) {
+    .carousel-item img {
+        height: 80vh;
+        margin: 0 auto;
+        width: 80%;
+
+    }
+}
+
+.container-cards {
+    @include flex-columna;
+    gap: $espacio-medio;
+    margin-top: $espacio-medio;
+    color: $color-terciario;
+
+
+}
+
+.card-body {
+    @include flex-columna;
+    background-color: $color-secundario;
+    color: black;
+}
+
+.card-text {
+    margin: 0 auto;
+    width:auto;
+    padding: 5px;
+}
+
+@media (min-widht: $tablet) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}
+
+@media (min-widht: $desktop) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: $espacio-medio;
+}
+
+p {
+    font-size: $fuente-media;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+
+}
+
+footer {
+    margin-top: $espacio-grande;
+    @include flex-columna;
+    a {
+        font-size: $icono-chico;
+    }
+}
+
+.btn {
+    border: solid 1px $color-cuarto; 
+    background-color: $color-cuarto;
+    text-align: center;
+    border-radius: 10px;
+    width: 80px;
 }

@@ -1,0 +1,18 @@
+.main-contacto {
+    @include flex-columna;
+
+}
+
+@media (min-width: $tablet) {
+    .main-contacto {
+        display: grid;
+        
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+form {
+    @include flex-columna;
+    gap: $espacio-Xchico;
+}
