@@ -34,6 +34,9 @@ img {
 
 .carousel-item img {
     height: 550px;
+    margin: 0 auto;
+    max-width: 80%;
+
 
     
 }
@@ -55,9 +58,9 @@ img {
 }
 
 .container-cards {
-    @include flex-columna;
-    gap: $espacio-medio;
-    margin-top: $espacio-medio;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     color: $color-terciario;
 
 

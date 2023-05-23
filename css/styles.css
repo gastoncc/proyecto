@@ -9,7 +9,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-
 header {
   background-color: gray;
   display: flex;
@@ -38,6 +37,8 @@ img {
 
 .carousel-item img {
   height: 550px;
+  margin: 0 auto;
+  max-width: 80%;
 }
 
 @media (min-widht: 768px) {
@@ -53,11 +54,9 @@ img {
   }
 }
 .container-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   color: rgb(67, 67, 67);
 }
 
