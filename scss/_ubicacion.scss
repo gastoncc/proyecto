@@ -1,5 +1,10 @@
 .iframe-ubicacion {
+    @include flex-columna;
     max-width: 100%;
     display: block;
     margin: 0 auto;
+}
+
+.body-ubicacion {
+    background-color: black;
 }
