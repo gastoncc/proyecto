@@ -1,6 +1,6 @@
 body {
-    background-color: $color-primario;
-    color: $color-terciario;
+    background-image: linear-gradient(to left, rgb(157, 156, 156), rgb(56, 56, 56), black);
+    color: black;
     font-family: $fuente-principal;
 
 }
@@ -41,14 +41,14 @@ img {
     
 }
 
-@media (min-widht: $tablet) {
+@media (min-width: $tablet) {
     .carousel-item img {
         height: 70vh;
 
     }
 }
 
-@media (min-widht: $desktop) {
+@media (min-width: $desktop) {
     .carousel-item img {
         height: 80vh;
         margin: 0 auto;
@@ -58,7 +58,7 @@ img {
 }
 
 .container-cards {
-    @include flex-columna;
+    @include flex-fila-centrado;
     gap: $espacio-medio;
     margin-top: $espacio-medio;
     color: $color-terciario;
@@ -78,16 +78,16 @@ img {
     padding: 5px;
 }
 
-@media (min-widht: $tablet) {
+@media (min-width: $tablet) {
     .container-cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+       flex-direction: column;
         gap: $espacio-chico;
         justify-items: center;
     }
 }
 
-@media (min-widht: $desktop) {
+@media (min-width: $desktop) {
     .container-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
