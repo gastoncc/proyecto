@@ -63,6 +63,14 @@ img {
   color: rgb(67, 67, 67);
 }
 
+.card-img-top:hover {
+  transform: scale(1.5);
+}
+
+.card-img-topp:hover {
+  transform: scale(1.1);
+}
+
 .card-body {
   display: flex;
   flex-direction: column;
@@ -96,8 +104,19 @@ img {
 h1, h2 {
   text-align: center;
   margin-top: 40px;
+  animation-duration: 1s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
 }
 
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 p {
   font-size: 20px;
   margin: 0 auto;
